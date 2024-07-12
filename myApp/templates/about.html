@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300;0,400;0,500;1,600;1,700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" name="" value="">
+            <label class="logo">AERIS</label>
+            <ul>
+                <li><a class="Active" href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                <li><a href="{% url 'contacts' %}">Contact</a></li>
+            </ul>
+           </nav>
+        <section class="about">
+            <div class="main">
+                <img src="{% static 'iris.png'%}">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <h5><span>Fan girl & Collector</span></h5>
+                    <p>Being an NCTzen means being a fan of the K-pop group NCT(Neo Culture Technology) and its various sub-units, such as NNCT 127,NCT Dream,and WayV.NCTzen are known for their support of the group's diverse muic stylrs,performances, and individual members.They engage with NCT's content participate in fan activities, and support the group's growth and success through streaming, voting, and attending events. The community is active on social media, sharing updates,fan art, and organizing fan projects.</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

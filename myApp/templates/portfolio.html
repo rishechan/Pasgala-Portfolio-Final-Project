@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html Lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="viewpoort" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+
+    <body id="bg"style="backgrpund-image:url('{% static 'bg.jpg' %}');">
+
+<body>
+   <nav>
+    <input type="checkbox" name="" value="">
+    <label class="logo">AERIS</label>
+    <ul>
+        <li><a class="Active" href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a href="{% url 'contacts' %}">Contact</a></li>
+    </ul>
+   </nav>
+   <section>
+    <div class="wrapper">
+        <div class="card">
+            <img src="{% static 'cardpic1.jpg'%}">
+            <div class="info">
+                <h1>Heading</h1>
+                <p> Buy from official retailers or the artist's website  to ensure that your purchase supports the artist directly.</p>
+                <a href="#" class="btn"> Read More</a>
+            </div>
+        </div>
+    <div class="card"> 
+        <img src="{% static 'cardpic2.jpg'%}">
+        <div class="info">
+            <h1>Heading</h1>
+            <p> Getting the first NCT album as a fan  can be a special and exciting experience</p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'cardpic3.jpg'%}">
+        <div class="info">
+            <h1>Heading</h1>
+            <p> First official photocard</p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+    </div>
+   </section>  
+</body>
+</html>
